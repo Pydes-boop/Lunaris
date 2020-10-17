@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 708346461740459254, guid: d1f0bc70432ddf34faa7598d330c3c55, type: 3}
+      propertyPath: m_Color.r
+      value: 0.57924527
+      objectReference: {fileID: 0}
+    - target: {fileID: 708346461740459254, guid: d1f0bc70432ddf34faa7598d330c3c55, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 708346461740459254, guid: d1f0bc70432ddf34faa7598d330c3c55, type: 3}
+      propertyPath: m_Color.b
+      value: 0.79607844
+      objectReference: {fileID: 0}
     - target: {fileID: 2856335546995276301, guid: d1f0bc70432ddf34faa7598d330c3c55, type: 3}
       propertyPath: m_Name
       value: tube_straight (2)
@@ -235,6 +247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tube_4way
       objectReference: {fileID: 0}
+    - target: {fileID: 5703426199706827495, guid: 5e2598693c7fb8448976f6678bb1c2c5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db1e6ee98a586e941bd02b93b90fa5fb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e2598693c7fb8448976f6678bb1c2c5, type: 3}
 --- !u!1001 &1016939141
@@ -244,9 +260,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 477356441755155700, guid: 4cdc9e8d285ab7841b6f5de242b6a777, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db1e6ee98a586e941bd02b93b90fa5fb, type: 2}
     - target: {fileID: 1700543814414485315, guid: 4cdc9e8d285ab7841b6f5de242b6a777, type: 3}
       propertyPath: m_Name
       value: tube_3way
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970573632120328749, guid: 4cdc9e8d285ab7841b6f5de242b6a777, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970573632120328749, guid: 4cdc9e8d285ab7841b6f5de242b6a777, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7960641
       objectReference: {fileID: 0}
     - target: {fileID: 2076822684005146105, guid: 4cdc9e8d285ab7841b6f5de242b6a777, type: 3}
       propertyPath: m_LocalPosition.x
@@ -603,6 +631,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8928337437902647431, guid: d1f0bc70432ddf34faa7598d330c3c55, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db1e6ee98a586e941bd02b93b90fa5fb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1f0bc70432ddf34faa7598d330c3c55, type: 3}
 --- !u!1001 &5782393908470126992
@@ -614,8 +646,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2676878018472388448, guid: a94280be79fe1424eb295b08f3d11568, type: 3}
       propertyPath: m_Name
-      value: tube_curve (1)
+      value: tube_curve
       objectReference: {fileID: 0}
+    - target: {fileID: 3257027466945658516, guid: a94280be79fe1424eb295b08f3d11568, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db1e6ee98a586e941bd02b93b90fa5fb, type: 2}
     - target: {fileID: 3345610252961283546, guid: a94280be79fe1424eb295b08f3d11568, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
