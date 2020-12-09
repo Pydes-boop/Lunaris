@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 386d0a1fb5a294148b1844716b84c810
+guid: fa9b1073b5b3c1143974b5c0318eb63a
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Carbon
-    second: {fileID: 2100000, guid: 9346a8ed11fe21f43b8b20d539227fab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor
-    second: {fileID: 2100000, guid: 61611d156465a194487545bbc3dbef25, type: 2}
+      name: Lampe
+    second: {fileID: 2100000, guid: 7ec4ed19f45935545b1cdcc91eb7fefc, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
