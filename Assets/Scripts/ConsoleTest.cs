@@ -13,7 +13,7 @@ public class ConsoleTest : MonoBehaviour
     void TaskOnClick()
     {
         Debug.Log("You have clicked the button!");
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
         Console.SetActive(false);
     }
     void Start()
