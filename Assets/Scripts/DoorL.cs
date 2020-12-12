@@ -7,7 +7,7 @@ public class DoorL : MonoBehaviour
     public GameObject left;
     public GameObject right;
     public float openingL = 10f;
-    public float close = 0;
+    public float close = 2.4f;
     public float speed;
     bool triggered;
     bool opening;
@@ -32,7 +32,7 @@ public class DoorL : MonoBehaviour
     {
         if (triggered)
         {
-            if(left.transform.position.x < openingL)
+            if(left.transform.position.x < this.transform.position.x + openingL)
             {
                 left.transform.Translate(1* speed * Time.deltaTime, 0f, 0f);
                 right.transform.Translate(-1* speed * Time.deltaTime, 0f, 0f);
@@ -40,7 +40,7 @@ public class DoorL : MonoBehaviour
         }
         else
         {
-            if (left.transform.position.x > close)
+            if (left.transform.position.x > this.transform.position.x+  close)
             {
                 left.transform.Translate(-1 * speed * Time.deltaTime, 0f, 0f);
                 right.transform.Translate(1 * speed * Time.deltaTime, 0f, 0f);
