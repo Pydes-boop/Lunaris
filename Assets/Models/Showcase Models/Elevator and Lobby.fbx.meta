@@ -3,7 +3,72 @@ guid: ecf4b5014bca1bf488c676ca7e883ae4
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aufzug Platform
+    second: {fileID: 2100000, guid: ab98b94e2d87d1d4b9d9c2e196d2304d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aufzug Platform Rillen
+    second: {fileID: 2100000, guid: 2cf6e80df8452934da8cb63765175aa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Elevator Wand
+    second: {fileID: 2100000, guid: 2cf6e80df8452934da8cb63765175aa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 00ba6f4a32d892747a3ec4257787bc2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holes
+    second: {fileID: 2100000, guid: 2cf6e80df8452934da8cb63765175aa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lobby Ground
+    second: {fileID: 2100000, guid: 039b212fdbf8cde46a735de1f499fb2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lobby Pedestals
+    second: {fileID: 2100000, guid: 2cf6e80df8452934da8cb63765175aa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lobby Wall
+    second: {fileID: 2100000, guid: ec8ca5db8c86c3c48839e1207913af26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lobby Wall Geometry
+    second: {fileID: 2100000, guid: bf1f6ab3b40242f4eafe21d8d47992a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Platform Elevator
+    second: {fileID: 2100000, guid: b6eec13a545be7245a356ca67ba94df8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rohr Yellow
+    second: {fileID: 2100000, guid: bf1f6ab3b40242f4eafe21d8d47992a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sockel
+    second: {fileID: 2100000, guid: 2cf6e80df8452934da8cb63765175aa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: b6eec13a545be7245a356ca67ba94df8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
