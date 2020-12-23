@@ -26,6 +26,7 @@ public class CodeTest : MonoBehaviour
 		onTrigger = false;
 		keypadScreen = false;
 		input = "";
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 
 	void Update()
