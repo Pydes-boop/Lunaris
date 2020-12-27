@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Locker : MonoBehaviour
 {
-	public GameObject left;
-	public GameObject right;
+	public GameObject left = null;
+	public GameObject right = null;
 	public float opening = 0.69f;
 	public float speed = 150f;
 	private bool onTrigger;
@@ -32,9 +33,19 @@ public class Locker : MonoBehaviour
 				//closes the door
 				if (left.transform.rotation.y > 0)
 				{
+                    try {
 					left.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
+					} catch (Exception e)
+					{
+						//Generic Catch Exception in Case of Single Locker with Only Left/Right
+					}
+					try {
 					right.transform.Rotate(0f, 0f,1 * speed * Time.deltaTime);
-                    if (left.transform.rotation.y < 0.1)
+					} catch (Exception e)
+					{
+						//Generic Catch Exception in Case of Single Locker with Only Left/Right
+					}
+					if (left.transform.rotation.y < 0.1)
                     {
 						opened = false;
                     }
@@ -45,9 +56,18 @@ public class Locker : MonoBehaviour
 				//opens the door
 				if (left.transform.rotation.y < this.transform.rotation.y + opening)
 				{
-					left.transform.Rotate(0f, 0f, 1 * speed * Time.deltaTime);
+					try {
+						left.transform.Rotate(0f, 0f, 1 * speed * Time.deltaTime);
+					} catch (Exception e) {
+						//Generic Catch Exception in Case of Single Locker with Only Left/Right
+					}
+					try {
 					right.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
-                    if (left.transform.rotation.y > 0.5)
+					} catch (Exception e)
+					{
+						//Generic Catch Exception in Case of Single Locker with Only Left/Right
+					}
+				if (left.transform.rotation.y > 0.5)
                     {
 						opened = true;
                     }
