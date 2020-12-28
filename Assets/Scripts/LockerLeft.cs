@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Locker : MonoBehaviour
+public class LockerLeft : MonoBehaviour
 {
 	public GameObject left = null;
-	public GameObject right = null;
 	public float opening = 0.69f;
 	public float speed = 150f;
 	private bool onTrigger;
@@ -28,52 +27,45 @@ public class Locker : MonoBehaviour
 	{
 		if (interaction)
 		{
-            if (!doorOpen)
-            {
+			if (!doorOpen)
+			{
 				//closes the door
 				if (left.transform.localRotation.y > 0)
 				{
-                    try {
-					left.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
-					} catch (Exception e)
+					try
 					{
-						//Generic Catch Exception in Case of Single Locker with Only Left/Right
+						left.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
 					}
-					try {
-					right.transform.Rotate(0f, 0f,1 * speed * Time.deltaTime);
-					} catch (Exception e)
+					catch (Exception e)
 					{
 						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
 					if (left.transform.localRotation.y < 0.1)
-                    {
+					{
 						opened = false;
-                    }
+					}
 				}
-            }
-            else
-            {
+			}
+			else
+			{
 				//opens the door
 				if (left.transform.localRotation.y < opening)
 				{
-					try {
+					try
+					{
 						left.transform.Rotate(0f, 0f, 1 * speed * Time.deltaTime);
-					} catch (Exception e) {
-						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
-					try {
-					right.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
-					} catch (Exception e)
+					catch (Exception e)
 					{
 						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
-				if (left.transform.localRotation.y > 0.5)
-                    {
+					if (left.transform.localRotation.y > 0.5)
+					{
 						opened = true;
-                    }
+					}
 				}
 			}
-			
+
 		}
 	}
 
@@ -81,11 +73,11 @@ public class Locker : MonoBehaviour
 	{
 		if (onTrigger)
 		{
-            if(!doorOpen)
+			if (!doorOpen)
 			{
 				GUI.Box(new Rect(0, 0, 200, 25), "Press 'E' to open locker");
 
-				if (Input.GetKeyDown(KeyCode.E)&&!opened)
+				if (Input.GetKeyDown(KeyCode.E) && !opened)
 				{
 					interaction = true;
 					doorOpen = true;
@@ -95,7 +87,7 @@ public class Locker : MonoBehaviour
 			{
 
 				GUI.Box(new Rect(0, 0, 200, 25), "Press 'E' to close Locker");
-				if (Input.GetKeyDown(KeyCode.E)&&opened)
+				if (Input.GetKeyDown(KeyCode.E) && opened)
 				{
 					interaction = true;
 					doorOpen = false;
@@ -103,6 +95,6 @@ public class Locker : MonoBehaviour
 			}
 
 		}
-        
+
 	}
 }
