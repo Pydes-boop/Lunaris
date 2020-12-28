@@ -31,7 +31,7 @@ public class Locker : MonoBehaviour
             if (!doorOpen)
             {
 				//closes the door
-				if (left.transform.rotation.y > 0)
+				if (left.transform.localRotation.y > 0)
 				{
                     try {
 					left.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
@@ -45,7 +45,7 @@ public class Locker : MonoBehaviour
 					{
 						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
-					if (left.transform.rotation.y < 0.1)
+					if (left.transform.localRotation.y < 0.1)
                     {
 						opened = false;
                     }
@@ -54,7 +54,7 @@ public class Locker : MonoBehaviour
             else
             {
 				//opens the door
-				if (left.transform.rotation.y < this.transform.rotation.y + opening)
+				if (left.transform.localRotation.y < opening)
 				{
 					try {
 						left.transform.Rotate(0f, 0f, 1 * speed * Time.deltaTime);
@@ -67,7 +67,7 @@ public class Locker : MonoBehaviour
 					{
 						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
-				if (left.transform.rotation.y > 0.5)
+				if (left.transform.localRotation.y > 0.5)
                     {
 						opened = true;
                     }
