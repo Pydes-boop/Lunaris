@@ -4,7 +4,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 used as template for Lunar News Network by Daniel Klitzner <br>
 created for the course Storyworlds at TUM in WS 20/21 <br>
-Newbs Website for our fictional World <br>
+News Website for our fictional World in which the Moon is a independent Country <br>
 
 Credits:
 
