@@ -1,10 +1,10 @@
-Verti by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Verti by HTML5 UP <br>
+html5up.net | @ajlkn <br>
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) <br>
 
-used as template for Lunar News Network by Daniel Klitzner
-created for the course Storyworlds at TUM in WS 20/21
-Newbs Website for our fictional World
+used as template for Lunar News Network by Daniel Klitzner <br>
+created for the course Storyworlds at TUM in WS 20/21 <br>
+Newbs Website for our fictional World <br>
 
 Credits:
 
