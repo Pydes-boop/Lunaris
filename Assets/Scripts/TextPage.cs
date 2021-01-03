@@ -4,10 +4,10 @@ using UnityEngine;
 using System;
 public class TextPage : MonoBehaviour
 {
+	public GameObject player;
 	private bool onTrigger = false;
 	private bool collected = false;
-	public int first, second;
-	public int fx, fy;
+	public String text=null;
 	void OnTriggerEnter(Collider other)
 	{
 		onTrigger = true;
@@ -24,17 +24,12 @@ public class TextPage : MonoBehaviour
 			if (!collected)
 			{
 				GUI.Box(new Rect(0, 0, 200, 25), "Press 'E' to collect Paper");
-
 				if (Input.GetKeyDown(KeyCode.E))
 				{
+					player.GetComponent<PlayerDex>().addPage(text);
 					collected = true;
 				}
 			}
-		}
-        if (collected)
-        {
-			Cursor.lockState = CursorLockMode.None;
-			GUI.Box(new Rect(0, 0, 320, 455), "");
 		}
 		
 	}

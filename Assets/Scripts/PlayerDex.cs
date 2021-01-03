@@ -6,18 +6,23 @@ using System.Linq;
 public class PlayerDex : MonoBehaviour
 {
     private List<String> diaries = new List<String>();
-    private bool open = true;
+    private bool open = false;
     private string text = null;
+    int curindex =-1;
     int index = 0;
     //index wird default auf 0 gesetzt;
-    void Start()
+    void Update()
     {
-        diaries.Add("sdhfsuiodfhsdiufh\nsaiduhfuiwehfiuwehf\naiougheiuorgherg\n");
-        diaries.Add("ioauehgiuerhgiuherg\nsaiduhfuiwehfiuwehf\nasuxucghsdduihf\n");
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            open = true;
+        }
     }
     public void addPage(String input)
     {
         diaries.Add(input);
+        curindex++;
+        text = diaries.ElementAt(curindex);
     }
     string getNext()
     {
