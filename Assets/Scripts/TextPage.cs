@@ -7,7 +7,7 @@ public class TextPage : MonoBehaviour
 	public GameObject player;
 	private bool onTrigger = false;
 	private bool collected = false;
-	public String text=null;
+	public String text;
 	void OnTriggerEnter(Collider other)
 	{
 		onTrigger = true;
@@ -23,10 +23,11 @@ public class TextPage : MonoBehaviour
 		{
 			if (!collected)
 			{
-				GUI.Box(new Rect(0, 0, 200, 25), "Press 'E' to collect Paper");
-				if (Input.GetKeyDown(KeyCode.E))
+				GUI.Box(new Rect(0, 25, 200, 25), "Press 'Q' to collect Paper");
+				if (Input.GetKeyDown(KeyCode.Q))
 				{
-					player.GetComponent<PlayerDex>().addPage(text);
+					print(text.Replace("\\n", "\n"));
+					player.GetComponent<PlayerDex>().addPage(text.Replace("\\n", "\n"));
 					collected = true;
 				}
 			}
