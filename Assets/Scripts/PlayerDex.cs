@@ -11,11 +11,20 @@ public class PlayerDex : MonoBehaviour
     int curindex =-1;
     int index = 0;
     //index wird default auf 0 gesetzt;
+    public CameraControl playerCam;
+    private void Start()
+    {
+        GameObject mainCam = GameObject.FindGameObjectWithTag("MainCamera");
+        playerCam = mainCam.GetComponent<CameraControl>();
+        playerCam.UILock = false;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
             open = true;
+            //PLAYER CAMERA LOCK IN UI
+            playerCam.UILock = true;
         }
     }
     public void addPage(String input)
@@ -50,6 +59,8 @@ public class PlayerDex : MonoBehaviour
             if (GUI.Button(new Rect(110, 350, 100, 100), "Exit"))
 			{
                open = false;
+               //PLAYER CAMERA LOCK IN UI
+               playerCam.UILock = false;
                Cursor.lockState = CursorLockMode.Locked;
             }
 		    if (GUI.Button(new Rect(215, 350, 100, 100), "Next"))

@@ -15,6 +15,33 @@ public class CodeTest : MonoBehaviour
 	private bool onTrigger;
 	private bool doorOpen;
 	private bool keypadScreen;
+	public CameraControl playerCam;
+	private void Start()
+	{
+		GameObject mainCam = GameObject.FindGameObjectWithTag("MainCamera");
+		playerCam = mainCam.GetComponent<CameraControl>();
+		playerCam.UILock = false;
+	}
+
+	void Update()
+	{
+		if (input == curPassword)
+		{
+			doorOpen = true;
+			Cursor.lockState = CursorLockMode.Locked;
+			//PLAYER CAMERA LOCK IN UI
+			playerCam.UILock = false;
+		}
+
+		if (doorOpen)
+		{
+			if (left.transform.position.x < this.transform.position.x + opening)
+			{
+				left.transform.Translate(1 * speed * Time.deltaTime, 0f, 0f);
+				right.transform.Translate(-1 * speed * Time.deltaTime, 0f, 0f);
+			}
+		}
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -29,24 +56,6 @@ public class CodeTest : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 	}
 
-	void Update()
-	{
-		if (input == curPassword)
-		{
-			doorOpen = true;
-			Cursor.lockState = CursorLockMode.Locked;
-		}
-
-		if (doorOpen)
-		{
-			if (left.transform.position.x < this.transform.position.x + opening)
-			{
-				left.transform.Translate(1 * speed * Time.deltaTime, 0f, 0f);
-				right.transform.Translate(-1 * speed * Time.deltaTime, 0f, 0f);
-			}
-		}
-	}
-
 	void OnGUI()
 	{
 		if (!doorOpen)
@@ -59,6 +68,8 @@ public class CodeTest : MonoBehaviour
 				{
 					keypadScreen = true;
 					Cursor.lockState = CursorLockMode.None;
+					//PLAYER CAMERA LOCK IN UI
+					playerCam.UILock = true;
 				}
 			}
 
@@ -120,6 +131,8 @@ public class CodeTest : MonoBehaviour
 				{
 					keypadScreen = false;
 					Cursor.lockState = CursorLockMode.Locked;
+					//PLAYER CAMERA LOCK IN UI
+					playerCam.UILock = false;
 				}
 				if (GUI.Button(new Rect(5, 350, 100, 100), "DEL"))
 				{
