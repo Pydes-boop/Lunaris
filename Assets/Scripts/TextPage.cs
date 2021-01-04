@@ -8,7 +8,8 @@ public class TextPage : MonoBehaviour
 	private bool onTrigger = false;
 	private bool collected = false;
 	public String text;
-	void OnTriggerEnter(Collider other)
+
+    void OnTriggerEnter(Collider other)
 	{
 		onTrigger = true;
 	}
@@ -26,10 +27,13 @@ public class TextPage : MonoBehaviour
 				GUI.Box(new Rect(0, 25, 200, 25), "Press 'Q' to collect Paper");
 				if (Input.GetKeyDown(KeyCode.Q))
 				{
-					print(text.Replace("\\n", "\n"));
-					player.GetComponent<PlayerDex>().addPage(text.Replace("\\n", "\n"));
+					//print(text.Replace("\\n", "\n"));
+					player.GetComponent<PlayerDex>().addPage(text.Replace("/n", "\\n").Replace("\\n", "\n"));
 					collected = true;
 				}
+			}
+			else {
+				GUI.Box(new Rect(0, 25, 200, 25), "Press 'F' to open Diary");
 			}
 		}
 		

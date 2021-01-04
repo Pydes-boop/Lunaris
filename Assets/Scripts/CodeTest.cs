@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 public class CodeTest : MonoBehaviour
 {
-
 	public string curPassword = "12345";
 	public GameObject left;
 	public GameObject right;

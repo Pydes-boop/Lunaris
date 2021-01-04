@@ -36,7 +36,7 @@ public class LockerLeft : MonoBehaviour
 					{
 						left.transform.Rotate(0f, 0f, -1 * speed * Time.deltaTime);
 					}
-					catch (Exception e)
+					catch (Exception)
 					{
 						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
@@ -55,7 +55,7 @@ public class LockerLeft : MonoBehaviour
 					{
 						left.transform.Rotate(0f, 0f, 1 * speed * Time.deltaTime);
 					}
-					catch (Exception e)
+					catch (Exception)
 					{
 						//Generic Catch Exception in Case of Single Locker with Only Left/Right
 					}
