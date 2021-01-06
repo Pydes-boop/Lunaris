@@ -21,7 +21,7 @@ public class AudioSourceRandom : MonoBehaviour
 
     void CallAudio()
     {
-        Invoke("RandomSoundness", 5);
+        Invoke("RandomSoundness", 15);
     }
 
     void RandomSoundness()
