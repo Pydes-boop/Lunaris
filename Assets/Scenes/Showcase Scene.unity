@@ -7940,7 +7940,7 @@ PrefabInstance:
     - target: {fileID: 703152221176438081, guid: 185342218303e16478dd3f6018ba0b02, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1273378330}
     - target: {fileID: 703152221176438083, guid: 185342218303e16478dd3f6018ba0b02, type: 3}
       propertyPath: m_Name
       value: Message
