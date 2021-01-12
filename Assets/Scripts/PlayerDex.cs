@@ -35,7 +35,7 @@ public class PlayerDex : MonoBehaviour
     }
     string getNext()
     {
-        if (index + 1 <= diaries.Count)
+        if (index + 1 < diaries.Count)
         {
             index++;
         }
