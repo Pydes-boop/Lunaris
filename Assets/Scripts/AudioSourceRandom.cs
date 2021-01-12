@@ -9,12 +9,9 @@ public class AudioSourceRandom : MonoBehaviour
 
     public AudioClip[] audioSources;
 
-    private int random;
-
     // Use this for initialization
     void Start()
     {
-        random = 1;
         CallAudio();
     }
 
