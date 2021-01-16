@@ -5,26 +5,18 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     float maxDistance = 10;
+    private bool triggered=false;
     void Start()
     {
     }
-    void FixedUpdate()
+    void OnMouseOver()
     {
-
-        // Will contain the information of which object the raycast hit
-        RaycastHit hit;
-
-        // if raycast hits, it checks if it hit an object with the tag Player
-        if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance) &&
-                    hit.collider.gameObject.CompareTag("Player"))
-
+        if (!triggered)
         {
-            Debug.Log("nice");
-            // Starts the countdown to destroy the enemy
+            triggered = true;
             StartCoroutine(Scare());
-
         }
-
+        
     }
 
 
@@ -32,7 +24,7 @@ public class Monster : MonoBehaviour
     IEnumerator Scare()
     {
         this.transform.Translate(4,0,0);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         this.transform.Translate(-4, 0, 0);
     }
 }
