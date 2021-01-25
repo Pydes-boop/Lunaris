@@ -1,0 +1,6 @@
+GameBuild/MonoBleedingEdge filter=lfs diff=lfs merge=lfs -text
+GameBuild/Space[[:space:]]Station[[:space:]]Horror.exe filter=lfs diff=lfs merge=lfs -text
+GameBuild/Space[[:space:]]Station[[:space:]]Horror_Data filter=lfs diff=lfs merge=lfs -text
+GameBuild/UnityCrashHandler64.exe filter=lfs diff=lfs merge=lfs -text
+GameBuild/UnityPlayer.dll filter=lfs diff=lfs merge=lfs -text
+GameBuild/* filter=lfs diff=lfs merge=lfs -text
