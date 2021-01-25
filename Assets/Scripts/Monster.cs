@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    float maxDistance = 10;
+    //float maxDistance = 10;
     private bool triggered=false;
     void Start()
     {

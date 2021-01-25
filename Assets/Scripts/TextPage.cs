@@ -8,6 +8,11 @@ public class TextPage : MonoBehaviour
 	private bool onTrigger = false;
 	private bool collected = false;
 	public String text;
+	private MeshRenderer meshRenderer;
+
+	void Start() {
+		meshRenderer = this.gameObject.GetComponent<MeshRenderer>();
+	}
 
     void OnTriggerEnter(Collider other)
 	{
@@ -30,6 +35,7 @@ public class TextPage : MonoBehaviour
 					//print(text.Replace("\\n", "\n"));
 					player.GetComponent<PlayerDex>().addPage(text.Replace("/n", "\\n").Replace("\\n", "\n"));
 					collected = true;
+					meshRenderer.enabled = false;
 				}
 			}
 			else {
