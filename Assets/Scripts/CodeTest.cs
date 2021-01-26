@@ -76,7 +76,7 @@ public class CodeTest : MonoBehaviour
 				int h = 25;
 				GUI.Box(new Rect(0, 0+h, 320, 455), "");
 				GUI.Box(new Rect(5, 5+h, 310, 25), input);
-
+				
 				if (GUI.Button(new Rect(5, 35 + h, 100, 100), "1"))
 				{
 					input = input + "1";
@@ -126,7 +126,7 @@ public class CodeTest : MonoBehaviour
 				{
 					input = input + "0";
 				}
-				if (GUI.Button(new Rect(215, 350 + h, 100, 100), "ESC"))
+				if (GUI.Button(new Rect(215, 350 + h, 100, 100), "ESC") || Input.GetKeyDown(KeyCode.Escape))
 				{
 					keypadScreen = false;
 					Cursor.lockState = CursorLockMode.Locked;

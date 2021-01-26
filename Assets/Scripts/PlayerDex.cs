@@ -56,7 +56,7 @@ public class PlayerDex : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             GUI.Box(new Rect(0, 50, 320, 455), "");
             GUI.Box(new Rect(0, 50, 320, 455), text);
-            if (GUI.Button(new Rect(110, 350, 100, 100), "Exit"))
+            if (GUI.Button(new Rect(110, 350, 100, 100), "Exit") || Input.GetKeyDown(KeyCode.Escape))
 			{
                open = false;
                //PLAYER CAMERA LOCK IN UI
