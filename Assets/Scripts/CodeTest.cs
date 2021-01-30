@@ -52,6 +52,7 @@ public class CodeTest : MonoBehaviour
 		keypadScreen = false;
 		input = "";
 		Cursor.lockState = CursorLockMode.Locked;
+		playerCam.UILock = false;
 	}
 
 	void OnGUI()
