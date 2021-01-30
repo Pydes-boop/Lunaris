@@ -2104,7 +2104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5308358649825596752, guid: cb2c93f8c98079b4a9f63defff87500f, type: 3}
       propertyPath: m_Intensity
-      value: 4
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5308358649825596752, guid: cb2c93f8c98079b4a9f63defff87500f, type: 3}
       propertyPath: m_Lightmapping
@@ -14598,6 +14598,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1273378330}
+    - target: {fileID: 703152221176438081, guid: 185342218303e16478dd3f6018ba0b02, type: 3}
+      propertyPath: Message
+      value: Press 'Q' to examine body
+      objectReference: {fileID: 0}
     - target: {fileID: 703152221176438082, guid: 185342218303e16478dd3f6018ba0b02, type: 3}
       propertyPath: m_Size.x
       value: 13.836272

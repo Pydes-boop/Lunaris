@@ -8,6 +8,7 @@ public class TextPage : MonoBehaviour
 	private bool onTrigger = false;
 	private bool collected = false;
 	public String text;
+	public String Message = "Press 'Q' to collect Paper";
 	private MeshRenderer meshRenderer;
 
 	void Start() {
@@ -29,7 +30,7 @@ public class TextPage : MonoBehaviour
 		{
 			if (!collected)
 			{
-				GUI.Box(new Rect(0, 25, 200, 25), "Press 'Q' to collect Paper");
+				GUI.Box(new Rect(0, 25, 200, 25), Message);
 				if (Input.GetKeyDown(KeyCode.Q))
 				{
 					//print(text.Replace("\\n", "\n"));
