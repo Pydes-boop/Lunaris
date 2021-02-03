@@ -2,12 +2,13 @@
 /Assets/eWolf/Sci-Fi_Objects_Pack1/* linguist-vendored
 /Assets/eWolf/Sci-Fi_Objects_Pack1/Docs/* linguist-vendored
 /Assets/eWolf/Sci-Fi_Objects_Pack1/Docs/Sci-Fi_Objects_Pack1.rtf linguist-vendored
-/Assets/eWolf/Common/*
-/Assets/eWolf/Common/Editor/*
-/Assets/eWolf/Common/Editor/Helpers/*
-/Assets/eWolf/Common/Prefabs/*
-/Assets/eWolf/Common/Scripts/*
-/Assets/eWolf/Common/Scripts/Helpers/*
-/Assets/eWolf/Common/Scripts/Interfaces/*
-/Assets/eWolf/Common/Shaders/*
+/Assets/eWolf/Common/* linguist-vendored
+/Assets/eWolf/Common/Editor/* linguist-vendored
+/Assets/eWolf/Common/Editor/Helpers/* linguist-vendored
+/Assets/eWolf/Common/Prefabs/* linguist-vendored
+/Assets/eWolf/Common/Scripts/* linguist-vendored
+/Assets/eWolf/Common/Scripts/Helpers/* linguist-vendored
+/Assets/eWolf/Common/Scripts/Interfaces/* linguist-vendored
+/Assets/eWolf/Common/Shaders/* linguist-vendored
+/GameBuild/* linguist-vendored
 
