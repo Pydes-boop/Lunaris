@@ -2,3 +2,12 @@
 /Assets/eWolf/Sci-Fi_Objects_Pack1/* linguist-vendored
 /Assets/eWolf/Sci-Fi_Objects_Pack1/Docs/* linguist-vendored
 /Assets/eWolf/Sci-Fi_Objects_Pack1/Docs/Sci-Fi_Objects_Pack1.rtf linguist-vendored
+/Assets/eWolf/Common/*
+/Assets/eWolf/Common/Editor/*
+/Assets/eWolf/Common/Editor/Helpers/*
+/Assets/eWolf/Common/Prefabs/*
+/Assets/eWolf/Common/Scripts/*
+/Assets/eWolf/Common/Scripts/Helpers/*
+/Assets/eWolf/Common/Scripts/Interfaces/*
+/Assets/eWolf/Common/Shaders/*
+
